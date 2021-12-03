@@ -20,7 +20,8 @@ async def on_ready():
    await channel.embed.send(title("Help:")
                                  description("We recommend you use @Client#0000 [Command] instead of [Command].")
                            color('00e3ff')
-                           
+  @Event.client
+                            
  async def on_message('$say-goodbye')
   mark_as('command')
   await channel.message.send("Goodbye.")
